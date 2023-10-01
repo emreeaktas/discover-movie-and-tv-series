@@ -1,219 +1,128 @@
-# [Material Dashboard 2 React](http://demos.creative-tim.com/material-dashboard-react/#/dashboard?ref=readme-mdr) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?url=https://www.creative-tim.com/product/material-dashboard-react&text=Check%20Material%20Dashboard%202%20react%20made%20by%20@CreativeTim%20#webdesign%20#dashboard%20#materialdesign%20#react%20https://www.creative-tim.com/product/material-dashboard-react)
+# Movie and TV Series Discovery App
 
-![version](https://img.shields.io/badge/version-2.2.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/material-dashboard-react.svg)](https://github.com/creativetimofficial/material-dashboard-react/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/material-dashboard-react.svg)](https://github.com/creativetimofficial/material-dashboard-react/issues?q=is%3Aissue+is%3Aclosed)
+This application allows users to discover trending movies and TV series and filter them by genres. It fetches data from [The Movie Database (TMDb)](https://www.themoviedb.org/) API.
 
-![Image](https://s3.amazonaws.com/creativetim_bucket/products/71/original/material-dashboard-react.jpg?1638950990)
+## Features
 
-Material Dashboard 2 React is our newest free MUI Admin Template based on React. If you’re a developer looking to create an admin dashboard that is developer-friendly, rich with features, and highly customisable, here is your match. Our innovative MUI & React dashboard comes with a beautiful design inspired by Google's Material Design and it will help you create stunning websites & web apps to delight your clients.
+- Discover trending movies and TV series using [TMDb API](https://www.themoviedb.org/documentation/api)
+- Filter movies and TV series by genres
+- Authentication system using Context API
+- Three types of users:
+  - Admin: Access to all components
+  - UserWhoCanOnlySeeMovie: Access only to Movie component
+  - UserWhoCanOnlySeeTvSeries: Access only to TV Series component
+- Sign-up required for accessing any component
 
-**Fully Coded Elements**
-Material Dashboard 2 React is built with over 70 frontend individual elements, like buttons, inputs, navbars, nav tabs, cards, or alerts, giving you the freedom of choosing and combining. All components can take variations in color, which you can easily modify using MUI styled() API and sx prop. You will save a lot of time going from prototyping to full-functional code because all elements are implemented.
+## Built With
 
-This free MUI & React Dashboard is coming with prebuilt design blocks, so the development process is seamless,
-switching from our pages to the real website is very easy to be done.
+- [React](https://reactjs.org/)
+- [Context API](https://reactjs.org/docs/context.html)
+- [Material Dashboard React](https://www.creative-tim.com/product/material-dashboard-react) template by Creative Tim
 
-Special thanks go to:
-- [Nepcha Analytics](https://nepcha.com?ref=readme) for the analytics tool. Nepcha is already integrated with Material Dashboard React. You can use it to gain insights into your sources of traffic.
+## Getting Started
 
-**Documentation built by Developers**
+1. Clone this repository.
+2. Install dependencies using `npm install`.
+3. Run the application using `npm start`.
 
-Each element is well presented in very complex documentation.
+## Authentication
 
-You can read more about the [documentation here](https://www.creative-tim.com/learning-lab/react/overview/material-dashboard/).
+Authentication is handled using Context API. There are three types of users:
 
-**Example Pages**
+- Admin: Can access all components.
+  - Email: admin@gmail.com
+  - Password: 123
+- UserWhoCanOnlySeeMovie: Can only access the Movie component.
+  - Email: UserWhoCanOnlySeeMovie@gmail.com
+  - Password: 1234
+- UserWhoCanOnlySeeTvSeries: Can only access the TV Series component.
+  - Email: UserWhoCanOnlySeeTvSeries@gmail.com
+  - Password: 12345
 
-If you want to get inspiration or just show something directly to your clients, you can jump-start your development with our pre-built example pages. You will be able to quickly set up the basic structure for your web project.
+## Usage
 
-View [example pages here](https://demos.creative-tim.com/material-dashboard-react/#/dashboard).
+1. Sign up for an account.
+2. Log in using your credentials.
+3. Based on your role, you will have access to different components.
 
-**HELPFUL LINKS**
+## API
 
-- View [Github Repository](https://github.com/creativetimofficial/material-dashboard-react)
-- Check [FAQ Page](https://www.creative-tim.com/faq)
+- Trending Movies and TV Series: [TMDb Trending API](https://www.themoviedb.org/documentation/api/discover)
+- Movies and TV Series Information: [TMDb API Documentation](https://developers.themoviedb.org/3/getting-started/introduction)
 
-#### Special thanks
+## Contributing
 
-During the development of this dashboard, we have used many existing resources from awesome developers. We want to thank them for providing their tools open source:
+Contributions are welcome. If you find a bug or have a feature request, please open an issue.
 
-- [MUI](https://mui.com/) - The React UI library for faster and easier web development.
-- [React ChartJS 2](http://reactchartjs.github.io/react-chartjs-2/#/) - Simple yet flexible React charting for designers & developers.
-- [ChromaJS](https://gka.github.io/chroma.js/) - A small-ish zero-dependency JavaScript library for all kinds of color conversions and color scales.
+## License
 
-Let us know your thoughts below. And good luck with development!
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Table of Contents
+---
 
-- [Versions](#versions)
-- [Demo](#demo)
-- [Quick Start](#quick-start)
-- [Documentation](#documentation)
-- [File Structure](#file-structure)
-- [Browser Support](#browser-support)
-- [Resources](#resources)
-- [Reporting Issues](#reporting-issues)
-- [Technical Support or Questions](#technical-support-or-questions)
-- [Licensing](#licensing)
-- [Useful Links](#useful-links)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+----------------------------------------------------------------------------------------------------------------
+(Turkce versiyon)
+# Film ve Dizi Keşfetme Uygulaması
 
-## Versions
+Bu uygulama, kullanıcıların popüler olan filmleri ve dizileri keşfetmelerine ve bunları türlerine göre filtrelemelerine olanak tanır. Verileri [The Movie Database (TMDb)](https://www.themoviedb.org/) API'sinden alır.
 
-[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/react-logo.png?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard-react?ref=readme-mdr)
+## Özellikler
 
-| React |
-| ----- |
+- [TMDb API'si](https://www.themoviedb.org/documentation/api) kullanılarak popüler olan filmleri ve dizileri keşfedin.
+- Filmleri ve dizileri türlerine göre filtreleme.
+- Context API kullanarak kimlik doğrulama sistemi.
+- Üç türde kullanıcı:
+  - Admin: Tüm bileşenlere erişebilir.
+  - UserWhoCanOnlySeeMovie: Sadece Film bileşenine erişebilir.
+  - UserWhoCanOnlySeeTvSeries: Sadece Dizi bileşenine erişebilir.
+- Herhangi bir bileşene erişim için kaydolma zorunluluğu.
 
-| [![Material Dashboard React](https://s3.amazonaws.com/creativetim_bucket/products/71/thumb/material-dashboard-react.jpg?1638950990)](http://demos.creative-tim.com/material-dashboard-react/#/dashboard?ref=readme-mdr)
+## Kullanılan Teknolojiler
 
-## Demo
+- [React](https://reactjs.org/)
+- [Context API](https://reactjs.org/docs/context.html)
+- Creative Tim tarafından tasarlanmış [Material Dashboard React](https://www.creative-tim.com/product/material-dashboard-react) şablonu
 
-- [Dashboard](http://demos.creative-tim.com/material-dashboard-react/#/dashboard?ref=readme-sudr)
-- [Profile](https://demos.creative-tim.com/material-dashboard-react/#/profile?ref=readme-sudr)
-- [RTL](https://demos.creative-tim.com/material-dashboard-react/#/rtl?ref=readme-sudr)
-- [Sign In](https://demos.creative-tim.com/material-dashboard-react/#/authentication/sign-in?ref=readme-sudr)
-- [Sign Up](https://demos.creative-tim.com/material-dashboard-react/#/authentication/sign-up?ref=readme-sudr)
+## Başlarken
 
-[View More](https://demos.creative-tim.com/material-dashboard-react/#/dashboard?ref=readme-mdr).
+1. Bu depoyu klonlayın.
+2. Bağımlılıkları yüklemek için `npm install` komutunu kullanın.
+3. Uygulamayı başlatmak için `npm start` komutunu kullanın.
 
-## Quick start
+## Kimlik Doğrulama
 
-Quick start options:
+Kimlik doğrulama Context API kullanılarak sağlanır. Üç türde kullanıcı bulunmaktadır:
 
-- Download from [Creative Tim](https://www.creative-tim.com/product/material-dashboard-react?ref=readme-mdr).
+- Admin: Tüm bileşenlere erişebilir.
+  - E-posta: admin@gmail.com
+  - Şifre: 123
+- UserWhoCanOnlySeeMovie: Sadece Film bileşenine erişebilir.
+  - E-posta: UserWhoCanOnlySeeMovie@gmail.com
+  - Şifre: 1234
+- UserWhoCanOnlySeeTvSeries: Sadece Dizi bileşenine erişebilir.
+  - E-posta: UserWhoCanOnlySeeTvSeries@gmail.com
+  - Şifre: 12345
 
-## Terminal Commands
+## Kullanım
 
-1. Download and Install NodeJs LTS version from [NodeJs Official Page](https://nodejs.org/en/download/).
-2. Navigate to the root ./ directory of the product and run `yarn install` or `npm install` to install our local dependencies.
+1. Bir hesap oluşturun.
+2. Kimlik bilgilerinizle giriş yapın.
+3. Rolünüze bağlı olarak, farklı bileşenlere erişiminiz olacaktır.
 
-## Documentation
+## API
 
-The documentation for the Material Dashboard is hosted at our [website](https://www.creative-tim.com/learning-lab/react/overview/material-dashboard/?ref=readme-mdr).
+- Popüler Filmler ve Diziler: [TMDb Popüler API'si](https://www.themoviedb.org/documentation/api/discover)
+- Film ve Dizi Bilgileri: [TMDb API Belgeleri](https://developers.themoviedb.org/3/getting-started/introduction)
 
-### What's included
+## Katkıda Bulunma
 
-Within the download you'll find the following directories and files:
+Katkılarınızı bekliyoruz. Bir hata bulursanız veya özellik isteğiniz varsa, lütfen bir konu açın.
 
-```
-material-dashboard-react
-    ├── public
-    │   ├── apple-icon.png
-    │   ├── favicon.png
-    │   ├── index.html
-    │   ├── manifest.json
-    │   └── robots.txt
-    ├── src
-    │   ├── assets
-    │   │   ├── images
-    │   │   └── theme
-    │   │       ├── base
-    │   │       ├── components
-    │   │       ├── functions
-    │   │       ├── index.js
-    │   │       └── theme-rtl.js
-    │   │   └── theme-dark
-    │   │       ├── base
-    │   │       ├── components
-    │   │       ├── functions
-    │   │       ├── index.js
-    │   │       └── theme-rtl.js
-    │   ├── components
-    │   │   ├── MDAlert
-    │   │   ├── MDAvatar
-    │   │   ├── MDBadge
-    │   │   ├── MDBox
-    │   │   ├── MDButton
-    │   │   ├── MDInput
-    │   │   ├── MDPagination
-    │   │   ├── MDProgress
-    │   │   ├── MDSnackbar
-    │   │   └── MDTypography
-    │   ├── context
-    │   ├── examples
-    │   │   ├── Breadcrumbs
-    │   │   ├── Cards
-    │   │   ├── Charts
-    │   │   ├── Configurator
-    │   │   ├── Footer
-    │   │   ├── Items
-    │   │   ├── LayoutContainers
-    │   │   ├── Lists
-    │   │   ├── Navbars
-    │   │   ├── Sidenav
-    │   │   ├── Tables
-    │   │   └── Timeline
-    │   ├── layouts
-    │   │   ├── authentication
-    │   │   ├── billing
-    │   │   ├── dashboard
-    │   │   ├── notifications
-    │   │   ├── profile
-    │   │   ├── rtl
-    │   │   └── tables
-    │   ├── App.js
-    │   ├── index.js
-    │   └── routes.js
-    ├── .eslintrc.json
-    ├── .prettierrc.json
-    ├── CHANGELOG.md
-    ├── ISSUE_TEMPLATE.md
-    ├── jsconfig.json
-    ├── LICENSE.md
-    ├── package.json
-    └── README.md
-```
+## Lisans
 
-## Browser Support
+Bu proje MIT Lisansı ile lisanslanmıştır - ayrıntılar için [LICENSE](LICENSE) dosyasına bakın.
 
-At present, we officially aim to support the last two versions of the following browsers:
+---
 
-<img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/chrome.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/firefox.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/edge.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/safari.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/opera.png" width="64" height="64">
-
-## Resources
-
-- [Live Preview](https://demos.creative-tim.com/material-dashboard-react/#/dashboard?ref=readme-mdr)
-- [Download Page](https://www.creative-tim.com/product/material-dashboard-react?ref=readme-mdr)
-- Documentation is [here](https://www.creative-tim.com/learning-lab/react/overview/material-dashboard/?ref=readme-mdr)
-- [License Agreement](https://www.creative-tim.com/license?ref=readme-mdr)
-- [Support](https://www.creative-tim.com/contact-us?ref=readme-mdr)
-- Issues: [Github Issues Page](https://github.com/creativetimofficial/material-dashboard-react/issues)
-- [Nepcha Analytics](https://nepcha.com?ref=readme) - Analytics tool for your website
-
-## Reporting Issues
-
-We use GitHub Issues as the official bug tracker for the Material Dashboard React. Here are some advices for our users that want to report an issue:
-
-1. Make sure that you are using the latest version of the Material Dashboard React. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/product/material-dashboard-react?ref=readme-mdr).
-2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
-3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
-
-## Technical Support or Questions
-
-If you have questions or need help integrating the product please [contact us](https://www.creative-tim.com/contact-us?ref=readme-mdr) instead of opening an issue.
-
-## Licensing
-
-- Copyright 2023 [Creative Tim](https://www.creative-tim.com?ref=readme-mdr)
-- Creative Tim [license](https://www.creative-tim.com/license?ref=readme-mdr)
-
-## Useful Links
-
-- [More products](https://www.creative-tim.com/templates?ref=readme-mdr) from Creative Tim
-
-- [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w)
-
-- [Freebies](https://www.creative-tim.com/bootstrap-themes/free?ref=readme-mdr) from Creative Tim
-
-- [Affiliate Program](https://www.creative-tim.com/affiliates/new?ref=readme-mdr) (earn money)
-
-##### Social Media
-
-Twitter: <https://twitter.com/CreativeTim>
-
-Facebook: <https://www.facebook.com/CreativeTim>
-
-Dribbble: <https://dribbble.com/creativetim>
-
-Google+: <https://plus.google.com/+CreativetimPage>
-
-Instagram: <https://instagram.com/creativetimofficial>
+Bu proje [Create React App](https://github.com/facebook/create-react-app) ile başlatılmıştır.
