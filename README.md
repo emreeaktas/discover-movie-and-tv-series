@@ -41,10 +41,9 @@ Authentication is handled using Context API. There are three types of users:
 
 ## Usage
 
-1. Sign up for an account.
-2. Log in using your credentials.
-3. Based on your role, you will have access to different components.
-
+1. Log in an account which is created by developer earlier.
+2. Based on your role, you will have access to different components.
+3. You can discover trending movies and tv series or you can discover movies and tv series by their genres.
 ## API
 
 - Trending Movies and TV Series: [TMDb Trending API](https://www.themoviedb.org/documentation/api/discover)
@@ -106,10 +105,9 @@ Kimlik doğrulama Context API kullanılarak sağlanır. Üç türde kullanıcı 
 
 ## Kullanım
 
-1. Bir hesap oluşturun.
-2. Kimlik bilgilerinizle giriş yapın.
-3. Rolünüze bağlı olarak, farklı bileşenlere erişiminiz olacaktır.
-
+1. Burada yer alan hesaplardan biri ile giriş yapın.
+2. Rolünüze bağlı olarak, farklı bileşenlere erişiminiz olacaktır.
+3. Trend olan film ve dizileri, türlere göre filtreleyebileceğiniz dizi ve filmleri keşfedin.
 ## API
 
 - Popüler Filmler ve Diziler: [TMDb Popüler API'si](https://www.themoviedb.org/documentation/api/discover)
